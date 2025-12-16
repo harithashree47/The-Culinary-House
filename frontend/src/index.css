@@ -1,0 +1,26 @@
+@import "tailwindcss";
+:root {
+  --primary: #ff7a00;       /* luxury orange */
+  --primary-dark: #e66d00;
+  --bg-dark: #0b0b0b;
+  --text-light: #f5f5f5;
+}
+
+.scroll-indicator {
+  animation: smoothScroll 2s infinite;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+}
